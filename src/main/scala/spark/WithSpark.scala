@@ -1,5 +1,8 @@
+package spark
+
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql.SparkSession
+
 object WithSpark {
 
   def withSpark(block: SparkSession => Unit): Unit = {

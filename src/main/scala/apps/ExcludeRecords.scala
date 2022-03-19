@@ -1,11 +1,14 @@
+package apps
 
-import WithSpark.withSpark
+
 import org.apache.spark.sql.{DataFrame, Dataset}
+import spark.WithSpark.withSpark
 
 case class User(userId: String)
 case class UserData(userId: String, userData: String)
 
-object TestApp extends App {
+//Filtering of Dataset based on data from another Dataset.
+object ExcludeRecords extends App {
 
   withSpark { spark =>
 
@@ -60,4 +63,3 @@ object TestApp extends App {
 
   }
 }
-
