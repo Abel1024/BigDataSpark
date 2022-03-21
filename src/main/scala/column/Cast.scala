@@ -1,9 +1,9 @@
-package functions
+package column
 
-import org.apache.spark.sql.types.{DataType, DataTypes}
-import spark.WithSpark.withSpark
+import org.apache.spark.sql.types.DataTypes
+import util.WithSpark.withSpark
 
-object CastF extends App {
+object Cast extends App {
 
   withSpark { spark =>
 

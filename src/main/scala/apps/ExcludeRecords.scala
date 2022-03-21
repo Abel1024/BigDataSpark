@@ -2,7 +2,7 @@ package apps
 
 
 import org.apache.spark.sql.{DataFrame, Dataset}
-import spark.WithSpark.withSpark
+import util.WithSpark.withSpark
 
 case class User(userId: String)
 case class UserData(userId: String, userData: String)

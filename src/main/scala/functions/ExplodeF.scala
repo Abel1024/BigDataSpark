@@ -1,7 +1,7 @@
 package functions
 
 import functions.Random.rand
-import spark.WithSpark.withSpark
+import util.WithSpark.withSpark
 
 object ExplodeF extends App {
 
@@ -25,9 +25,6 @@ object ExplodeF extends App {
     val explodedDf = df.select(explode($"value"))
     explodedDf.printSchema()
     explodedDf.show()
-
-    explodedDf.select("col.*").show()
-
   }
 
 }
